@@ -1,0 +1,49 @@
+{
+  "name": "mediasoup_nodemodule",
+  "version": "3.0.8",
+  "description": "Cutting Edge WebRTC Video Conferencing",
+  "contributors": [
+    "zhangttr  <ztr_999@126.com> (https://github.com/zhangtianren)"  
+  ],
+  "homepage": "https://mediasoup.org",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zhangtr/mediasoup_nodemodule.git"
+  },
+  "main": "lib/index.js",
+  "keywords": [
+    "webrtc",
+    "ortc",
+    "sfu",
+    "nodejs"
+  ],
+  "os": [
+    "!win32"
+  ],
+  "engines": {
+    "node": ">=8.6.0"
+  },
+  "scripts": {
+    "lint": "npm run lint:node && npm run lint:worker",
+    "lint:node": "eslint -c .eslintrc.js gulpfile.js lib test",
+    "lint:worker": "make lint -C worker"
+  },
+  "dependencies": {
+    "debug": "^4.1.1",
+    "h264-profile-level-id": "^1.0.0",
+    "netstring": "^0.3.0",
+    "random-number": "0.0.9",
+    "uuid": "^3.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "eslint-plugin-jest": "^22.5.1",
+    "gulp": "^4.0.2",
+    "gulp-clang-format": "^1.0.27",
+    "jest": "^24.8.0",
+    "jest-tobetype": "^1.2.3",
+    "open-cli": "^5.0.0"
+  }
+}
+
